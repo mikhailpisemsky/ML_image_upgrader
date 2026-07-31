@@ -1,0 +1,39 @@
+{
+  "name": "ML_image_upgrader",
+  "version": "1.0.0",
+  "description": "Improving image quality with machine learning",
+  "keywords": [
+    "ML",
+    "image",
+    "quality"
+  ],
+  "homepage": "https://github.com/mikhailpisemsky/ML_image_upgrader#readme",
+  "bugs": {
+    "url": "https://github.com/mikhailpisemsky/ML_image_upgrader/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhailpisemsky/ML_image_upgrader.git"
+  },
+  "license": "ISC",
+  "author": "Mikhail Pisemsky <mikhailpisemsky@yandex.ru>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "morgan": "^1.11.0",
+    "multer": "^2.2.0",
+    "sharp": "^0.35.3",
+    "uuid": "^14.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4",
+    "nodemon": "^3.1.14"
+  }
+}
