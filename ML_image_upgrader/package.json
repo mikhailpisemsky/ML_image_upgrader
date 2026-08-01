@@ -20,20 +20,14 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "helmet": "^8.3.0",
-    "morgan": "^1.11.0",
-    "multer": "^2.2.0",
-    "sharp": "^0.35.3",
-    "uuid": "^14.0.1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "concurrently": "^10.0.4",
-    "nodemon": "^3.1.14"
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.20.0"
   }
 }
