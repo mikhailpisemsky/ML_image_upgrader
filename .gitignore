@@ -5,3 +5,8 @@ dist/
 *.swp
 .vscode/
 .idea/
+uploads/
+*.h5
+*.keras
+saved_model/
+.env
