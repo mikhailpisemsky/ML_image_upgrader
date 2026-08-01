@@ -137,7 +137,7 @@ async function init() {
   uploadBtn.disabled = true;
   try {
     setStatus('⏳ Загрузка модели...');
-    model = await loadModel('/model/model.json');
+    model = await loadModel('./model/model.json');
     setStatus('✅ Модель загружена. Выберите изображение.');
     console.log('✅ Модель загружена');
   } catch (err) {
@@ -227,7 +227,7 @@ async function handleFile(file) {
     setStatus('🔄 Применение параметров...');
     await new Promise(resolve => setTimeout(resolve, 100));
 
-    worker = new Worker('/worker.js');
+    worker = new Worker('./worker.js');
 
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const totalRows = canvas.height;
